@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+			<head>
+				<title>Website Preview</title>
+				<style type="text/css">
+				body{
+					margin: 0px;
+					padding: 0px;
+					font-family: "Lucida Grande","Trebuchet MS",Helvetica,Arial,Verdana,sans-serif;
+				}
+				.xdebug-var-dump {
+					display:none;
+				}
+				.preview-heading{
+					background: url(/images/preview-bg.jpg);
+					height: 52px;
+					line-height: 48px;
+					color: #fff;
+					font-size: 20px;
+					font-weight: bold;
+					padding: 0px 15px;
+					border-bottom: 1px solid #474747;
+					position:fixed;
+					top: 0;
+					left: 0;
+					overflow-y: hidden;
+					width: 100%;
+					box-sizing: border-box;
+				}
+
+				.preview-right{
+					float:right;
+					color: #ccc;
+					font-size: 12px;
+					margin-right: 23px;
+				}
+
+				img{
+					border: none;
+				}
+
+				#preview-iframe{
+					width: 100%;
+					display:block;
+					margin-top: 52px;
+				}
+		</style>
+		<script src="js/1.7-custom-prototype.min.js" type="text/javascript"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="none">
+
+	</head>
+	<body>
+		<div class="preview-heading">
+
+			<div class="preview-right">
+				This bar will disappear when your website is live. This link will expire in 13 days.
+			</div>
+			Website Preview
+		</div>
+		<iframe id="preview-iframe" src="/preview/kj4lje.j4naf8a3h8l75.1cd39ae07df108e27ae5cba3a315dc0b/373202622512679932" frameborder="0"></iframe>
+		<script type="text/javascript">
+		setInterval(
+			function(){
+				var height = document.viewport.getHeight() - 52;
+				$('preview-iframe').setStyle({'height':height + 'px'});
+			}, 1000
+		);
+		</script>
+	</body>
+		</html>
